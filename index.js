@@ -1,8 +1,6 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var dirname = path.dirname(process.mainModule.filename);
+const path = require('path')
+const dirname = path.dirname(process.mainModule.filename)
 
-module.exports = function(p){
-	return require(path.join(dirname, p));
-};
+module.exports = p => require(path.join(dirname, p))
