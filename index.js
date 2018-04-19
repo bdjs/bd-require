@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path')
+const prefix = require('./prefix')
 const dirname = path.dirname(process.mainModule.filename)
 
-module.exports = p => require(path.join(dirname, p))
+module.exports = prefix(dirname)
